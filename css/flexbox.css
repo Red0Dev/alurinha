@@ -1,0 +1,127 @@
+
+.cabecalhoPrincipal > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    height: 260px;
+    flex-flow: column wrap;
+}
+
+.rodapePrincipal-patrocinadores > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.videoSobre > .container {
+    display: flex;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .conteudoPrincipal-cursos-link {
+        width: 32%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+    
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .videoSobre > .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalhoPrincipal > .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: initial;
+    }
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+}
+
